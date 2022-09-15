@@ -3,23 +3,23 @@ class Main
 {
     public static boolean palindrome(int n)
     {
-        int a=n,rem,sum=0;
+        int a=n;
+        int rem,rev=0;
         while(n>0)
         {
             rem=n%10;
-            sum=sum*10+rem;
+            rev=rev*10+rem;
             n=n/10;
         }
-        if(a==sum)
+        if(a==rev)
         return true;
         else
         return false;
-        
     }
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,a,b=0;
+        int n,a=0,b=0;
         n=sc.nextInt();
         for(int i=n+1;;i++)
         {
@@ -29,19 +29,19 @@ class Main
                 break;
             }
         }
-        for(int j=n-1;j>=1;j--)
+        for(int i=n-1;i>=1;i--)
         {
-            if(palindrome(j))
+            if(palindrome(i))
             {
-                b=j;
+                b=i;
                 break;
             }
         }
-        if(n-b>a-n)
-        System.out.println(a);
-        else if(n-b<a-n)
-        System.out.println(b);
-        else
+        if(n-b == a-n)
         System.out.println(b+" "+a);
+        else if(n-b>a-n)
+        System.out.println(a);
+        else
+        System.out.println(b);
     }
 }
