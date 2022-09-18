@@ -4,10 +4,9 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,k,c=0;
-        int arr[];
-        n=sc.nextInt();
-        k=sc.nextInt();
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        int arr[],c=0;
         arr=new int[n];
         for(int i=0;i<n;i++)
         {
