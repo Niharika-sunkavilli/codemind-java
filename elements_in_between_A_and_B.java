@@ -15,15 +15,14 @@ class Main
         int b=sc.nextInt();
         for(int i=0;i<n;i++)
         {
+            
             if(arr[i]>=a && arr[i]<=b)
             {
-                System.out.print(arr[i]+" ");
-                c++;
+            System.out.print(arr[i]+" ");
+            c++;
             }
-            
         }
-        
         if(c==0)
-        System.out.println("-1");
+        System.out.println(-1);
     }
 }
