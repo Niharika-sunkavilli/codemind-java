@@ -4,7 +4,8 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,arr[],x=0;
+        int n,arr[];
+      
         n=sc.nextInt();
         arr=new int[n];
         for(int i=0;i<n;i++)
@@ -12,12 +13,14 @@ class Main
             arr[i]=sc.nextInt();
             
         }
-       
-        for(int i=0;i<n;i++)
+        for(int i=n-1;i>=0;i--)
         {
             if(arr[i]%2!=0)
-            x=arr[i];
+            {
+            System.out.println(arr[i]);
+            break;
+            }
         }
-        System.out.println(x);
+        
     }
 }
