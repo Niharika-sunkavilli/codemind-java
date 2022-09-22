@@ -4,19 +4,21 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,arr[],c=0;
+        int n,arr[],z,count=0;
+      
         n=sc.nextInt();
         arr=new int[n];
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
+            
         }
-        int z=sc.nextInt();
+        z=sc.nextInt();
         for(int i=0;i<n;i++)
         {
             if(arr[i]==z)
-            c++;
+            count++;
         }
-        System.out.println(c);
+     System.out.println(count);   
     }
 }
