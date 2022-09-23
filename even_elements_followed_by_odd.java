@@ -15,12 +15,11 @@ class Main
         {
             if(arr[i]%2==0)
             System.out.print(arr[i]+" ");
-            
         }
-        for(int j=0;j<n;j++)
+        for(int i=0;i<n;i++)
         {
-            if(arr[j]%2!=0)
-            System.out.print(arr[j]+" ");
+            if(arr[i]%2!=0)
+            System.out.print(arr[i]+" ");
         }
     }
 }
