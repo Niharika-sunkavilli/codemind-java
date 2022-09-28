@@ -1,17 +1,16 @@
 import java.util.Scanner;
 class Main
 {
-    public static boolean ispalindrome(int n)
+    public static boolean palindrome(int n)
     {
-        int a=n;
-        int rem,sum=0;
+        int a=n,c=0,rev=0,rem;
         while(n>0)
         {
             rem=n%10;
-            sum=sum*10+rem;
+            rev=rev*10+rem;
             n=n/10;
         }
-        if(a==sum)
+        if(a==rev)
         return true;
         else
         return false;
@@ -19,17 +18,14 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,c=0;
+        int n,arr[],c=0;
         n=sc.nextInt();
-        int arr[];
         arr=new int[n];
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
-            if(ispalindrome(arr[i]))
-            {
-               c++; 
-            }
+            if(palindrome(arr[i]))
+            c++;
         }
         System.out.println(c);
     }
