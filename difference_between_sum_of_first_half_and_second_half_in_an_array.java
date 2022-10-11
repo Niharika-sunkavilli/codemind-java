@@ -20,6 +20,5 @@ class Main
             s=s+arr[j];
         }
         System.out.println(s-f);
-        
     }
 }
