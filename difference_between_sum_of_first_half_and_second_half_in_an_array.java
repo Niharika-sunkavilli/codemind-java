@@ -4,25 +4,22 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,arr[],fs=0,ss=0;
+        int n,arr[],f=0,s=0;
         n=sc.nextInt();
         arr=new int[n];
-       
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
         }
-         
         for(int i=0;i<n/2;i++)
         {
-        fs+=arr[i];
+            f=f+arr[i];
         }
         for(int j=n/2;j<n;j++)
         {
-        ss+=arr[j];
+            s=s+arr[j];
         }
-        System.out.println(ss-fs);
-        
+        System.out.println(s-f);
         
     }
 }
