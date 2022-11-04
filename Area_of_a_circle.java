@@ -3,11 +3,11 @@ class Main
 {
     public static void main(String args[])
     {
-        int r;
         Scanner sc=new Scanner(System.in);
+        int r;
+        double area;
         r=sc.nextInt();
-        float area;
-        area=(float)3.14*r*r;
+        area=3.14*r*r;
         System.out.format("%.2f",area);
     }
 }
